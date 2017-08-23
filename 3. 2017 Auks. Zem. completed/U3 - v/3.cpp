@@ -56,10 +56,8 @@ void alg(int A[])
                 else if (dir == 'S')
                     currentI++;
                 A[currentI * n + currentJ] = currentNr;
-                //cout << currentNr << ' ';
                 currentNr++;
             }
-            //cout << '\n';
             if (dir == 'E')
                 dir = 'N';
             else if(dir == 'N')
@@ -70,7 +68,6 @@ void alg(int A[])
                 dir = 'E';
         }
         moveTiles++;
-        //cout << '\n';
     }
 }
 
@@ -80,7 +77,6 @@ int main ()
     cout << "Ivesti sk.: ";
     cin >> m;
     n = sqrt(m);
-    //cout << n << '\n';
     int A[m];
 
     alg(A);
